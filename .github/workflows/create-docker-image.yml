@@ -17,8 +17,8 @@ jobs:
     - name: Build Image
       run: |
         cd app
-        docker image build . --file Dockerfile
+        docker image build . --file Dockerfile -t retro5050/capstone-proj5:test
     
     - name: Push Image to Docker
-      run: docker image push retro5050/capstone-proj5
+      run: docker image push retro5050/capstone-proj5:test
   
