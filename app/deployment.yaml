@@ -1,0 +1,19 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: dockerized-react
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: dockerized-react
+  template:
+    metadata:
+      labels:
+        app: dockerized-react
+    spec:
+      containers:
+      - name: dockerized-react
+        image: sheldons23/dockerized-react
+        ports:
+        - containerPort: 80
