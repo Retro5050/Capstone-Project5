@@ -1,0 +1,10 @@
+{
+  "simulation": "com.gatling.tests.LoginTestNew",
+  "simulationId": "logintestnew",
+  "start": 1675881401241,
+  "description": "4",
+  "scenarios": ["LoginTestNew"],
+  "assertions": [
+
+  ]
+}

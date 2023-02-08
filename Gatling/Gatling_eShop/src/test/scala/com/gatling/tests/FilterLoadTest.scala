@@ -43,7 +43,7 @@ class FilterLoadTest extends Simulation {
 	val users2 = scenario("Users2").exec(filter1, filter2)
 
 	setUp(
-		users1.inject(rampUsers(10).during(10)),
-		users2.inject(rampUsers(4).during(10))
+		users1.inject(rampUsers(100).during(10)),
+		users2.inject(rampUsers(10).during(10))
 	).protocols(httpProtocol)
 }
